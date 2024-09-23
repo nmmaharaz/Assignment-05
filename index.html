@@ -16,7 +16,7 @@
       <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body>
+<body id="body-container">
       <header>
             <nav class="flex justify-between pt-6 pb-12 pl-6 pr-5 sm-pl-8 sm:pr-8 lg:pl-[137px] lg:pr-[137px] bg-[#f9f7f3]">
                   <button class="btn btn-primary border-none text-xl font-semibold bg-[#aaed6d] text-black">Blog</button>
@@ -39,7 +39,7 @@
             <section>
                <div class="box-border mx-6 sm:mx-9 lg:mx-[155px]">
                   <div class="">
-                  <div class="container flex flex-col lg:flex-row justify-between items-center sm:items-center p-8 rounded-2xl border-solid border border-gray-300">
+                  <div class="container relative flex flex-col lg:flex-row justify-between items-center sm:items-center p-8 rounded-2xl border-solid border border-gray-300">
                         <div class="mb-6 lg:mb-0 lg:mr-7 w-[100%] lg:w-[48%]">
                               <img class="w-[100%] sm:h-[380px] lg:h-[100%]" src="assets/noakhali.png" alt="">
                         </div>
@@ -47,20 +47,28 @@
                               <button class="btn flex items-center max-w-[700px]"><div class="w-[18px] h-[18px]"><img src="assets/coin.png" alt=""></div> <p id="total-n-amount" class="text-gray-500">0</p> <p class="text-gray-500">BDT</p></button>
                               <h2 class="text-xl mt-4 mb-4 font-bold">Donate for Flood at Noakhali, Bangladesh</h2>
                               <p class="leading-6 lexend"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                              <input id="input-n-flied" class="border mt-7 mb-5 border-solid w-[100%] border-gray-300 rounded-lg p-4" type="text" placeholder="Write Donation Amount">
+                              <input id="input-n-flied" class="border mt-7 mb-5 border-solid w-[100%] border-gray-300 rounded-lg p-4 required:" type="text" placeholder="Write Donation Amount">
                               <button id="n-donate-now" class=" bg-[#aaed6d] btn text-xl font-semibold text-black w-[100%]">Donate Now</button>
-
+                              <div id="n-congrates" class="hidden">
+                                    <div class="flex flex-col items-center absolute w-[350px] h-[300px] top-[40%] left-[20%] sm:w-[400px] sm:h-[300px] sm:top[40%] sm:left-[20%] h lg:w-[500px] lg:h-[300px] lg:top-[20%] lg:left-[30%] bg-white shadow-[0_105px_100px_50px_rgba(0,0,0,0.3)] rounded-2xl">
+                                          <h2 class="text-[50px] font-bold py-2">Congrates!</h2>
+                                          <img class="w-[35px] h-[35px]" src="assets/coin.png" alt="" srcset="">
+                                          <p class="lexend mt-5">You Have Donated for Humankind</p>
+                                          <h4 class="py-4">Successfully</h4>
+                                          <button id="close-n-congrates" class="btn">close confirmation</button>
+                                       </div>
+                                 </div>
                         </div>
                   </div>
                </div>
             </section>
             <section>
-                  <div class="box-border mx-6 sm:mx-9 lg:mx-[155px] my-8">
+                  <div class="box-border mx-6 sm:mx-9 lg:mx-[155px] my-8 relative">
                      <div class="">
                      <div class="container flex flex-col lg:flex-row justify-between p-7 rounded-2xl border-solid border border-gray-300">
                            <div class="sm:overflow-hidden flex items-center mb-6 lg:mb-0 lg:mr-7 w-[100%] lg:w-[48%] lg:h-[420px] rounded-2xl">
                                  <img class="w-[100%] sm:h-[380px] h-[100%] lg:scale-y-[1.2]" src="assets/feni.png" alt="">
-                           </div>
+                           </div> 
                            <div class="lg:w-[52%] flex flex-col justify-between lg:h-[420px]">
                              <div>
                               <button class="btn flex"><div class="w-[18px] h-[18px]"><img src="assets/coin.png" alt=""></div> <p id="f-donation" class="text-gray-500">0</p> <p class="text-gray-500">BDT</p></button>
@@ -69,6 +77,15 @@
                                  <p class="leading-6 lexend"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                                  <input id="input-f-filed" class="my-4 lg:my-0 border border-solid w-[100%] border-gray-300 mt-4 rounded-lg p-4" type="text" placeholder="Write Donation Amount">
                                  <button id="f-donation-button" class="bg-[#aaed6d] btn text-xl font-semibold text-black w-[100%]">Donate Now</button>
+                                 <div id="f-congrates" class="hidden">
+                                    <div class="flex flex-col items-center absolute w-[350px] h-[300px] top-[40%] left-[20%] sm:w-[400px] sm:h-[300px] sm:top[40%] sm:left-[20%] h lg:w-[500px] lg:h-[300px] lg:top-[20%] lg:left-[30%] bg-white shadow-[0_105px_100px_50px_rgba(0,0,0,0.3)] rounded-2xl">
+                                          <h2 class="text-[50px] font-bold py-2">Congrates!</h2>
+                                          <img class="w-[35px] h-[35px]" src="assets/coin.png" alt="" srcset="">
+                                          <p class="lexend mt-5">You Have Donated for Humankind</p>
+                                          <h4 class="py-4">Successfully</h4>
+                                          <button id="close-f-congrates" class="btn">close confirmation</button>
+                                       </div>
+                                 </div>
    
                            </div>
                      </div>
@@ -76,7 +93,7 @@
             <section>
                <div class="box-border mx-6 sm:mx-9 lg:mx-[155px] mb-[40px] lg:mb-[80px]">
                   <div class="">
-                  <div class="container flex flex-col lg:flex-row justify-between items-center p-7 rounded-2xl border-solid border border-gray-300">
+                  <div class="container relative flex flex-col lg:flex-row justify-between items-center p-7 rounded-2xl border-solid border border-gray-300">
                         <div class="sm:overflow-hidden flex items-center mb-6 lg:mb-0 lg:mr-7 w-[100%] lg:w-[48%] lg:h-[420px] rounded-2xl">
                               <img class="w-[100%] sm:h-[380px] h-[100%] sm:scale-x-[1.5] lg:scale-x-[1] lg:scale-y-[1.2]" src="assets/quota-protest.png" alt="">
                         </div>
@@ -88,7 +105,15 @@
                               <p class="leading-6 lexend"> The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
                               <input id="input-q-flied" class="border border-solid w-[100%] mt-6 mb-4 lg:mt-0 lg:mb-0 border-gray-300 rounded-lg p-4" type="text" placeholder="Write Donation Amount">
                               <button id="quota-donation-button" class="bg-[#aaed6d] btn text-xl font-semibold text-black w-[100%]">Donate Now</button>
-
+                              <div id="q-congrates" class="hidden">
+                                    <div class="flex flex-col items-center absolute w-[350px] h-[300px] top-[40%] left-[20%] sm:w-[400px] sm:h-[300px] sm:top[40%] sm:left-[20%] h lg:w-[500px] lg:h-[300px] lg:top-[20%] lg:left-[30%] bg-white shadow-[0_105px_100px_50px_rgba(0,0,0,0.3)] rounded-2xl">
+                                          <h2 class="text-[50px] font-bold py-2">Congrates!</h2>
+                                          <img class="w-[35px] h-[35px]" src="assets/coin.png" alt="" srcset="">
+                                          <p class="lexend mt-5">You Have Donated for Humankind</p>
+                                          <h4 class="py-4">Successfully</h4>
+                                          <button id="close-q-congrates" class="btn">close confirmation</button>
+                                       </div>
+                                 </div>
                         </div>
                   </div>
             </section>
@@ -98,6 +123,7 @@
       </footer>
 
       <script src="utilities1.js"></script>
+      <script src="utilities.2.js"></script>
       <script src="noakhali.js"></script>
       <script src="feni.js"></script>
       <script src="quota.js"></script>

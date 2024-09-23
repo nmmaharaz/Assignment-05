@@ -2,6 +2,10 @@ document.getElementById('quota-donation-button').addEventListener('click', funct
       const inputNFlied = getInputElementById('input-q-flied')
       const NDonation = getTotalDonationElementById('total-q-donation')
       if(inputNFlied >= 0 && !isNaN(inputNFlied)){
+            const openQueCongrates = getCongratesElementById('q-congrates')
+            document.getElementById('close-q-congrates').addEventListener('click', function(event){
+                  document.getElementById('q-congrates').classList.add('hidden')
+            })
             const TotalDonationAmount = getAllTotalDonationAmountById('total-donation')
             const totalNDonation = NDonation + inputNFlied
             document.getElementById('total-q-donation').innerText = totalNDonation
