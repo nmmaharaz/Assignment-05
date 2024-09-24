@@ -4,7 +4,7 @@ document.getElementById('n-donate-now').addEventListener('click', function(event
       if(inputNFlied >= 0 && !isNaN(inputNFlied)){
             const openNCongrates = getCongratesElementById('n-congrates')
             document.getElementById('close-n-congrates').addEventListener('click', function(event){
-                  document.getElementById('n-congrates').classList.add('hidden')
+                  document.getElementById('n-congrates').classList.add('opacity-0', 'pointer-events-auto')
             })
             const TotalDonationAmount = getAllTotalDonationAmountById('total-donation')
             const totalNDonation = NDonation + inputNFlied

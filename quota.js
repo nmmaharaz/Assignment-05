@@ -4,7 +4,7 @@ document.getElementById('quota-donation-button').addEventListener('click', funct
       if(inputNFlied >= 0 && !isNaN(inputNFlied)){
             const openQueCongrates = getCongratesElementById('q-congrates')
             document.getElementById('close-q-congrates').addEventListener('click', function(event){
-                  document.getElementById('q-congrates').classList.add('hidden')
+                  document.getElementById('q-congrates').classList.add('opacity-0', 'pointer-events-auto')
             })
             const TotalDonationAmount = getAllTotalDonationAmountById('total-donation')
             const totalNDonation = NDonation + inputNFlied
