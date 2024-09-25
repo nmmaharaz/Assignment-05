@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
+
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,93 +10,121 @@
       <link href="https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@100..900&display=swap" rel="stylesheet">
       <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
       <style>
-            .lexend{
+            .lexend {
                   font-family: "Lexend", sans-serif;
             }
       </style>
       <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+
 <body>
-      <header>
-            <nav class="fixed w-full top-0 z-10 backdrop-blur-md opacity-80">
+      <header class="sticky top-0 backdrop-blur-md z-10">
+            <nav class="w-full opacity-80">
                   <div class="">
-                   <div class=" pl-6 pr-5 sm-pl-8 sm:pr-8 lg:px-[137px] bg-[#f9f7f3]">
-                         <div class=" container flex justify-between pt-6 pb-6 navbar ">
-                               <button id="close-blog" class="btn border-none text-xl font-semibold bg-[#aaed6d] text-black">Blog</button>
-                               <div class="flex flex-col sm:flex-row items-center">
-                                     <img class="pb-2 sm:pb-0" src="assets/logo.png" alt="">
-                                     <h1 class="text-xl font-semibold ml-4">Blog</h1>
-                               </div>
-                               <div class="flex items-center">
-                                     <div><img src="assets/coin.png" alt=""> </div>
-                                     <h4 id="total-donation" class="ml-2 mr-1 text-xl text-gray-500 font-semibold">50500</h4>
-                                     <p class=" text-xl text-gray-500 font-semibold">BDT</p>
-                               </div>
-                            </div>
-                   </div>
+                        <div class=" pl-6 pr-5 sm-pl-8 sm:pr-8 lg:px-[137px] bg-[#f9f7f3]">
+                              <div class=" container flex justify-between pt-6 pb-6 navbar ">
+                                    <button id="close-blog"
+                                          class="btn border-none text-xl font-semibold bg-[#aaed6d] text-black">Blog</button>
+                                    <div class="flex flex-col sm:flex-row items-center">
+                                          <img class="pb-2 sm:pb-0" src="assets/logo.png" alt="">
+                                          <h1 class="text-xl font-semibold ml-4">Blog</h1>
+                                    </div>
+                                    <div class="flex items-center">
+                                          <div><img src="assets/coin.png" alt=""> </div>
+                                          <h4 id="total-donation" class="ml-2 mr-1 text-xl text-gray-500 font-semibold">
+                                                500500</h4>
+                                          <p class=" text-xl text-gray-500 font-semibold">BDT</p>
+                                    </div>
+                              </div>
+                        </div>
                   </div>
-                   </nav>
+            </nav>
       </header>
       <main class="min-h-[70vh]">
-            <section class=" mt-[160px] sm:mt-[120px] lg:mt-[130px] ">
-                 <div class="pl-6 pr-5 sm-pl-8 sm:pr-8 lg:px-[137px]">
-                  <div class="flex"> 
-                        <h1 class="text-[35px] font-bold mb-3">Important FAQ</h1>
-                        <img class="w-[45px] h-[100%]" src="assets/question.png" alt="" srcset="">
-                  </div>
-                  <div class="join join-vertical w-full">
-                        <div class="collapse collapse-arrow join-item border-base-300 border">
-                          <input type="radio" name="my-accordion-4" checked="checked" />
-                          <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
-                          <div class="collapse-content">
-                            <p>The Document Object Model(DOM) is an application programming interface (API) for HTML and XML documents. The DOM represents a document with a logical tree. Each branch of the tree ends in a node, and each node contains objects. DOM methods allow programmatic access to the tree with one can change the structure or style or content of a document. </p>
-                          </div>
+            <section class="mt-4">
+                  <div class="pl-6 pr-5 sm-pl-8 sm:pr-8 lg:px-[137px]">
+                        <div class="flex">
+                              <h1 class="text-[35px] font-bold mb-3">Important FAQ</h1>
+                              <img class="w-[45px] h-[100%]" src="assets/question.png" alt="" srcset="">
                         </div>
-                        <div class="collapse collapse-arrow join-item border-base-300 border">
-                          <input type="radio" name="my-accordion-4" />
-                          <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
-                          <div class="collapse-content">
-                            <p class="mb-4 ">JavaScript provides some of methods to select DOM elements.
-                              <div><h4 class="text-xl font-semibold my-2">getElementById:</h4>
-                              <p>The getElementById method allows select an element by Id. This method returns the element object if it finds an element with the specified id, otherwise it returns null.</p>
+                        <div class="join join-vertical w-full">
+                              <div class="collapse collapse-arrow join-item border-base-300 border">
+                                    <input type="radio" name="my-accordion-4" checked="checked" />
+                                    <div class="collapse-title text-xl font-medium">What is the Document Object Model
+                                          (DOM)?</div>
+                                    <div class="collapse-content">
+                                          <p>The Document Object Model(DOM) is an application programming interface
+                                                (API) for HTML and XML documents. The DOM represents a document with a
+                                                logical tree. Each branch of the tree ends in a node, and each node
+                                                contains objects. DOM methods allow programmatic access to the tree with
+                                                one can change the structure or style or content of a document. </p>
+                                    </div>
                               </div>
-                              <div><h4 class="text-xl font-semibold my-2">getElementByClassName:</h4>
-                                    <p>The getElementByClassName method allows select an element by Class Name. It returns a collect of all elements in the document with the specified class name.</p>
+                              <div class="collapse collapse-arrow join-item border-base-300 border">
+                                    <input type="radio" name="my-accordion-4" />
+                                    <div class="collapse-title text-xl font-medium">How do you select an element from
+                                          the DOM?</div>
+                                    <div class="collapse-content">
+                                          <p class="mb-4 ">JavaScript provides some of methods to select DOM elements.
+                                          <div>
+                                                <h4 class="text-xl font-semibold my-2">getElementById:</h4>
+                                                <p>The getElementById method allows select an element by Id. This method
+                                                      returns the element object if it finds an element with the
+                                                      specified id, otherwise it returns null.</p>
+                                          </div>
+                                          <div>
+                                                <h4 class="text-xl font-semibold my-2">getElementByClassName:</h4>
+                                                <p>The getElementByClassName method allows select an element by Class
+                                                      Name. It returns a collect of all elements in the document with
+                                                      the specified class name.</p>
+                                          </div>
+                                          <div>
+                                                <h4 class="text-xl font-semibold my-2">getElementByTagName:</h4>
+                                                <p>The getElementByTagName method allows select an element by Tag Name.
+                                                      It returns a collect of all elements in the document with the
+                                                      specified tag name.</p>
+                                          </div>
+                                          <div>
+                                                <h4 class="text-xl font-semibold my-2">querySelector:</h4>
+                                                <p>The querySelector method allows select the first element that matches
+                                                      a specified CSS selector in the document.</p>
+                                          </div>
+                                          <div>
+                                                <h4 class="text-xl font-semibold my-2">querySelectorAll:</h4>
+                                                <p>The querySelectorAll method allows select all element that matches a
+                                                      specified CSS selector in the document.</p>
+                                          </div>
+                                          </p>
                                     </div>
-                              <div><h4 class="text-xl font-semibold my-2">getElementByTagName:</h4>
-                                    <p>The getElementByTagName method allows select an element by Tag Name. It returns a collect of all elements in the document with the specified tag name.</p>
+                              </div>
+                              <div class="collapse collapse-arrow join-item border-base-300 border">
+                                    <input type="radio" name="my-accordion-4" />
+                                    <div class="collapse-title text-xl font-medium"> What is event delegation in the
+                                          context of the DOM, and why is it useful? </div>
+                                    <div class="collapse-content">
+                                          <p>Event delegation it is very usefulness. Event delegation allows us to
+                                                attach a single event listener to parent element that will fire for all
+                                                descendants matching a selector, whether those descendants exist now or
+                                                are added in the future. </p>
                                     </div>
-                              <div><h4 class="text-xl font-semibold my-2">querySelector:</h4>
-                                    <p>The querySelector method allows select the first element that matches a specified CSS selector in the document.</p>
+                              </div>
+                              <div class="collapse collapse-arrow join-item border-base-300 border">
+                                    <input type="radio" name="my-accordion-4" />
+                                    <div class="collapse-title text-xl font-medium">How do you manipulate an element's
+                                          attributes and styles using the DOM?</div>
+                                    <div class="collapse-content">
+                                          <p>Use method('element').style.property = 'value'</p>
                                     </div>
-                              <div><h4 class="text-xl font-semibold my-2">querySelectorAll:</h4>
-                                    <p>The querySelectorAll method allows select all element that matches a specified CSS selector in the document.</p>
-                                    </div>
-                            </p>
-                          </div>
+                              </div>
                         </div>
-                        <div class="collapse collapse-arrow join-item border-base-300 border">
-                          <input type="radio" name="my-accordion-4" />
-                          <div class="collapse-title text-xl font-medium"> What is event delegation in the context of the DOM, and why is it useful? </div>
-                          <div class="collapse-content">
-                            <p>Event delegation it is very usefulness. Event delegation allows us to attach a single event listener to parent element that will fire for all descendants matching a selector, whether those descendants exist now or are added in the future. </p>
-                          </div>
-                        </div>
-                        <div class="collapse collapse-arrow join-item border-base-300 border">
-                          <input type="radio" name="my-accordion-4" />
-                          <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
-                          <div class="collapse-content">
-                            <p>Use method('element').style.property = 'value'</p>
-                          </div>
-                        </div>
-                      </div>
-                 </div>
+                  </div>
             </section>
       </main>
-      <footer  class="h-[100px] bg-[#f9f7f3]">
+      <footer class="h-[100px] bg-[#f9f7f3]">
 
       </footer>
       <script src="js/index.js"></script>
 </body>
+
 </html>
