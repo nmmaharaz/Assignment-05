@@ -1,7 +1,7 @@
 document.getElementById('n-donate-now').addEventListener('click', function(event){
       const inputNFlied = getInputElementById('input-n-flied')
       const NDonation = getTotalDonationElementById('total-n-amount')
-      if(inputNFlied >= 0 && !isNaN(inputNFlied)){
+      if(inputNFlied > 0 && !isNaN(inputNFlied)){
             document.getElementById('my_modal_1').showModal()
             const TotalDonationAmount = getAllTotalDonationAmountById('total-donation')
             const totalNDonation = NDonation + inputNFlied

@@ -2,7 +2,7 @@ const feniDonationFiled = document.getElementById('f-donation-button').addEventL
       const inputNFlied = getInputElementById('input-f-filed')
       console.log(inputNFlied)
       const NDonation = getTotalDonationElementById('f-donation')
-      if(inputNFlied >= 0 && !isNaN(inputNFlied)){
+      if(inputNFlied > 0 && !isNaN(inputNFlied)){
             document.getElementById('my_modal_2').showModal()
             const TotalDonationAmount = getAllTotalDonationAmountById('total-donation')
             const totalNDonation = NDonation + inputNFlied
